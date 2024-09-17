@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andre Vieira Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/08e45d71a4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="CSS/images/ANDRÉ..png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio">Trabalhos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Olá! Me chamo</p>
+                <h1>André Vieira</h1>
+                <h2>Eu sou <span class="digitando"></span></h2>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+                <a href="CSS/images/cv_andre_2024.2.pdf" download class="btn btn3">Download Currículo</a>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Sobre Mim------------------>
+    <div id="about">
+        <div class="containe">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="CSS/images/perfil4_blazer_grey_bg.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre <span>Mim</span></h1>
+                    <p> Olá! Sou um profissional altamente colaborativo e orientado a resultados, com
+                        habilidades excepcionais em trabalho em equipe, definição de metas claras e garantia de
+                        entregas pontuais.</p>
+                    <p> Minha paixão por criar ambientes colaborativos impulsionou o sucesso de equipes
+                        anteriores, enquanto minha abordagem focada em metas garantiu resultados consistentes.</p>
+                    <p> Minha capacidade de gerenciar prazos apertados com atenção aos detalhes reforça
+                        minha eficácia em ambientes dinâmicos.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('experiencia')">Experiência</p>
+                        <p class="tab-links" onclick="opentab('educacao')">Formação Academica</p>
+                    </div>
+                    <div class=" tab-contents active-tab" id="habilidades">
+                        <ul>
+                            <li><span>Microsoft Power BI - Intermediário</span><br>Criação de Dashboard, Tabelas de
+                                Dados, Integrção atravez de API<br></li>
+                            <li><span>Microsoft Excel - Avançado</span><br>Automação de Planilhas, Dashboards
+                                Elaborados, ETL com Power Query<br></li>
+                            <li><span>Google Looker Studio - Intermediário</span><br>ETL com LookML, Criação de
+                                Dashboard, Integração com as Plataformas Google<br></li>
+                            <li><span>Python - Iniciante</span><br>Automação de Tarefas, Tratamento de Dados<br>
+                            <li><span>HTML/CSS - Iniciante</span><br>Criação de Landing Page, Blogs e outros...<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educacao">
+                        <ul>
+                            <li><span>Gestão em RH</span><br>IBGM 2012</li>
+                            <li><span>Data Science</span><br>UNINASSAU 2024</li>
+                            <li><span>MBA Inteligência Artificial</span><br>Em Breve</li>
+                        </ul>
+                    </div>
+                    <div class=" tab-contents" id="experiencia">
+                        <ul>
+                            <li><span>Analista de Mercado</span><br>Grupo Pharmapele, Fevereiro de 2023 - Atualmente<br>
+                            </li>
+                            <li><span>Analista de Planejamento Estratégico</span><br>Grupo Sereducacional S.A, Fevereiro
+                                de 2021 - Fevereiro de 2023<br></li>
+                            <li><span>Encarregado de Planejamento</span><br>Mudanças Alagoana LTDA, Janeiro de 2019 -
+                                Setembro de 2019<br></li>
+                            <li><span>Analista de RH</span><br>Intertransmar do Nordeste LTDA, Agosto de 2020 - Outubro
+                                de 2020</li>
+                            <li><span>Supervisor de Vendas (Banco Itaú)</span><br>Contax S.A., Agosto de 2008 - Julho de
+                                2018<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------- Serviços ------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Meus <span>Serviços</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h2>Insights</h2>
+                    <p>Tratamento e análise avançada de dados (ETL) gerando valiosas informações valiosas informações que orientam decisões estratégicas, 
+                        utilizando linguagens modernas como LookML (Google) e Power Query Formula Language (Microsoft).
+                    </p>
+                    <!--<a href="#">saiba mais</a>-->
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Automação</h2>
+                    <p>Automação de tarefas cansativas e repetitivas com Python, Microsoft Power Automate e Google Appscript. 
+                        Economizando horas de trabalho manual e aumentando a eficiência dos colaboradores, com segurança e confiabilidade.
+                    </p>
+                    <!--<a href="#">saiba mais</a>-->
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-bar"></i>
+                    <h2>Visualização</h2>
+                    <p>Criação de dashboards dinâmicos e envolventes utilizando Looker Studio e Power BI, permitindo a fácil 
+                        compreensão de dados complexos. Com foco em design intuitivo, personalização e usabilidade, garantindo 
+                        que as informações estejam sempre ao alcance, em tempo real.</p>
+                    <!--<a href="#">saiba mais</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- portfolio ------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Meus <span>Trabalhos</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="CSS/images/dashboard_notebook.png">
+                    <div class="layer">
+                        <h3>Relatório no Power BI</h3>
+                        <p>Dashboard construído na plataforma Microsoft Power BI</p>
+                        <br>
+                        <p> Em construção...</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="CSS/images/dashboard_solo.png">
+                    <div class="layer">
+                        <h3>Agenda Pessoal no Looker Studio</h3>
+                        <p>Sistema Integrado na plataforma Google Looker Studio</p>
+                        <a href="https://lookerstudio.google.com/reporting/8cc03f77-be73-436f-9b7e-245edb600960/page/KUZ6D" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="CSS/images/dashboard_mobile_cafe.png">
+                    <div class="layer">
+                        <h3>Dashboard Mobile</h3>
+                        <p>Dashboard Mobile construído na plataforma Google Looker Studio</p>
+                        <a href="https://lookerstudio.google.com/reporting/50734f39-655e-4fb2-802f-3aeac4850086/page/p_icen7ua4kd" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contate-<span>Me</span></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> devvieiraandre@gmail.com</a>
+                    <p class="number"><i class="fa-solid fa-phone"></i> (81) 98772-8084</p>
+                    <a href="CSS/images/cv_andre_2024.2.pdf" download class="btn btn3">Download Currículo</a>
+                </div>
+                <div class="contact-right">
+                    <form method="post" action="" name="contact-form">
+                        <input type="text" name="name" placeholder="Seu Nome">
+                        <input type="email" name="email" placeholder="Sem Email">
+                        <input type="text" name="phone" placeholder="Seu Telefone">
+                        <textarea type="text" name="message" rows="6" placeholder="Sua Mensagem"></textarea>
+                        <button type="submit" name="_subject" value="Novo Contato!" class="btn btn2">Enviar</button>
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Desenvolvido com <i class="fa-solid fa-heart"></i> por André Vieira</p>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

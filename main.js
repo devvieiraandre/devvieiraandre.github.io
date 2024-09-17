@@ -1,0 +1,1 @@
+var typed = new Typed(".digitando", { strings: ["Cientista de Dados", "Analista de Dados", "Analista de BI"], typeSpeed: 100, backSpeed: 100, backDelay: 1e3, loop: !0 });
